@@ -11,6 +11,8 @@ import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
+  console.log("start");
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -43,7 +45,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPostBySlug(params.slug[0] + '/' + params.slug[1], [
     'title',
     'date',
     'slug',
@@ -69,9 +71,12 @@ export async function getStaticPaths() {
 
   return {
     paths: posts.map((post) => {
+      let temp = post.slug;
+      const ps = temp.split('/')
       return {
         params: {
-          slug: post.slug,
+          slug: ps
+          
         },
       }
     }),

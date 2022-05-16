@@ -19,9 +19,7 @@ import { MoonIcon, SunIcon, ArrowLeftIcon } from '@chakra-ui/icons'
 import { useColorMode } from '@chakra-ui/react'
 
 
-const Navbar = (props) => {
-  const { path } = props;
-  console.log(path);
+const Navbar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode()
@@ -29,7 +27,7 @@ const Navbar = (props) => {
 
   return (
     <React.Fragment>
-      <Box {...props}>
+      {/* <Box {...props}> */}
         <chakra.header
           bg={bg}
           w="full"
@@ -133,7 +131,7 @@ const Navbar = (props) => {
             </HStack>
           </Flex>
         </chakra.header>
-      </Box>
+      {/* </Box> */}
     </React.Fragment>
   );
 };
