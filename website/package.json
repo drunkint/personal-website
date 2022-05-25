@@ -8,6 +8,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.0",
     "@chakra-ui/react": "^2.0.0",
+    "@cyriacbr/react-split-text": "^1.0.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "classnames": "2.3.1",
@@ -19,7 +20,8 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "remark": "14.0.2",
-    "remark-html": "15.0.1"
+    "remark-html": "15.0.1",
+    "three": "^0.140.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

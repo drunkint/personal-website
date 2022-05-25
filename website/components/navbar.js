@@ -114,18 +114,21 @@ const Navbar = () => {
                     onClick={mobileNav.onClose}
                   />
 
-                  <Button w="full" variant="ghost">
-                    Experiences
-                  </Button>
-                  <Button w="full" variant="ghost">
-                    Projects
-                  </Button>
-                  <Button w="full" variant="ghost">
-                    Blog
-                  </Button>
-                  <Button colorScheme="teal" size="sm">
+                <Link href="/experiences">
+                  <Button variant="ghost">Experiences</Button>
+                </Link>
+                <Link href="/projects">
+                  <Button variant="ghost">Projects</Button>
+                </Link>
+                <Link href="/posts">
+                  <Button variant="ghost">Posts</Button>
+                </Link>
+                <Link href="/resume">
+                  <Button variant="ghost">
+                  {/* <Button colorScheme="teal" size="sm"> */}
                     Resume
                   </Button>
+                </Link>
                 </VStack>
               </Box>
             </HStack>
