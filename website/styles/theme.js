@@ -12,11 +12,18 @@ const config = {
   useSystemColorMode: false,
 };
 
+const fonts = {
+  fonts: {
+    heading: `'Raleway', sans-serif`,
+    body: `'Raleway', sans-serif`,
+  }
+}
+
 const textStyles = {
   h1: {
     // you can also use responsive styles
     fontSize: ['48px', '72px'],
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
@@ -30,6 +37,6 @@ const textStyles = {
 
 
 // 3. extend the theme
-const theme = extendTheme({ colors , config, textStyles});
+const theme = extendTheme({ colors , config, textStyles, fonts});
 
 export default theme;

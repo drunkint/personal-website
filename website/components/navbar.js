@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import {
   chakra,
@@ -14,32 +15,36 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { IconButton } from '@chakra-ui/button'
-import { MoonIcon, SunIcon, ArrowLeftIcon } from '@chakra-ui/icons'
-import { useColorMode } from '@chakra-ui/react'
-
+import { IconButton } from "@chakra-ui/button";
+import { MoonIcon, SunIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import { useColorMode } from "@chakra-ui/react";
 
 const Navbar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
-  const { colorMode, toggleColorMode } = useColorMode()
-
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <React.Fragment>
       {/* <Box {...props}> */}
-        <chakra.header
-          bg={bg}
-          w="full"
-          px={{ base: 2, sm: 4 }}
-          py={3}
-          shadow="md"
+      <chakra.header
+        bg={bg}
+        w="full"
+        px={{ base: 2, sm: 4 }}
+        py={3}
+        shadow="md"
+      >
+        <motion.div
+          className="title"
+          initial={{ y: -250 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.3, type: "spring", stiffness: 70 }}
         >
           <Flex alignItems="center" justifyContent="space-between" mx="auto">
             <Flex>
               <chakra.a
                 href="/"
-                title="Choc Home Page"
+                title="Home Page"
                 display="flex"
                 alignItems="center"
               >
@@ -47,7 +52,7 @@ const Navbar = () => {
               </chakra.a>
               <Link href="/">
                 <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-                  <ArrowLeftIcon marginRight={3} marginBottom={1}/>
+                  <ArrowLeftIcon marginRight={3} marginBottom={1} />
                   LHS
                 </chakra.h1>
               </Link>
@@ -70,7 +75,7 @@ const Navbar = () => {
                 </Link>
                 <Link href="/resume">
                   <Button variant="ghost">
-                  {/* <Button colorScheme="teal" size="sm"> */}
+                    {/* <Button colorScheme="teal" size="sm"> */}
                     Resume
                   </Button>
                 </Link>
@@ -114,26 +119,27 @@ const Navbar = () => {
                     onClick={mobileNav.onClose}
                   />
 
-                <Link href="/experiences">
-                  <Button variant="ghost">Experiences</Button>
-                </Link>
-                <Link href="/projects">
-                  <Button variant="ghost">Projects</Button>
-                </Link>
-                <Link href="/posts">
-                  <Button variant="ghost">Posts</Button>
-                </Link>
-                <Link href="/resume">
-                  <Button variant="ghost">
-                  {/* <Button colorScheme="teal" size="sm"> */}
-                    Resume
-                  </Button>
-                </Link>
+                  <Link href="/experiences">
+                    <Button variant="ghost">Experiences</Button>
+                  </Link>
+                  <Link href="/projects">
+                    <Button variant="ghost">Projects</Button>
+                  </Link>
+                  <Link href="/posts">
+                    <Button variant="ghost">Posts</Button>
+                  </Link>
+                  <Link href="/resume">
+                    <Button variant="ghost">
+                      {/* <Button colorScheme="teal" size="sm"> */}
+                      Resume
+                    </Button>
+                  </Link>
                 </VStack>
               </Box>
             </HStack>
           </Flex>
-        </chakra.header>
+        </motion.div>
+      </chakra.header>
       {/* </Box> */}
     </React.Fragment>
   );

@@ -5,7 +5,9 @@ const { Center, Text } = require("@chakra-ui/react");
 
 const Experiences = () => {
     return (
-        <Splash/>
+        <Center>
+            <Text>Experiences page in construction</Text>
+        </Center>
     );
 }
 

@@ -12,7 +12,8 @@ export default function Index() {
           {/* adding other stuff to head */}
           <title>Angus Lee's portfolio</title>
         </Head>
-          <Intro />
+          {/* <Intro /> */}
+          <Splash/>
 
     </>
   )
