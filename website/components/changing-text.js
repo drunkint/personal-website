@@ -2,7 +2,7 @@ import { Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const wordList = ["Programmer", "Teacher", "Calligrapher", "Climber"];
+const wordList = ["李旭紳","Programmer", "Teacher", "Calligrapher", "Climber"];
 const durationOfWord = 4;
 const effectTime = 1;
 const initDelay = 0.8;

@@ -6,13 +6,11 @@ const { Center, Grid, GridItem, Text } = require("@chakra-ui/react");
 const Experiences = () => {
   return (
     <Center>
-      <Grid templateRows="repeat(2, 1fr)">
+      <Grid templateRows="repeat(1, 1fr)">
         <GridItem>
           <Text>Experiences page in construction</Text>
         </GridItem>
-        <GridItem>
-          <ChangingText />
-        </GridItem>
+        
       </Grid>
     </Center>
   );

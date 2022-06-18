@@ -38,7 +38,7 @@ const Navbar = () => {
           className="title"
           initial={{ y: -250 }}
           animate={{ y: 0 }}
-          transition={{ delay: 0.3, type: "spring", stiffness: 70 }}
+          transition={{ delay: 0, type: "spring", stiffness: 70 }}
         >
           <Flex alignItems="center" justifyContent="space-between" mx="auto">
             <Flex>
