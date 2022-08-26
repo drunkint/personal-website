@@ -1,4 +1,5 @@
 import ChangingText from "../../components/changing-text";
+import ExperiencePreview from "../../components/experience-preview";
 import Splash from "../../components/splash";
 
 const { Center, Grid, GridItem, Text } = require("@chakra-ui/react");
@@ -8,7 +9,7 @@ const Experiences = () => {
     <Center>
       <Grid templateRows="repeat(1, 1fr)">
         <GridItem>
-          <Text>Experiences page in construction</Text>
+          <ExperiencePreview/>
         </GridItem>
         
       </Grid>
