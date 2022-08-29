@@ -27,7 +27,7 @@ const Taq2022Summer = () => {
         <Heading as="h1" marginBottom="20px">My Work @ Taq Automative</Heading>
         <Grid templateRows="repeat(1, 1fr)" gap={3}>
           <GridItem>
-            <Heading as="h3">Maintaining the Credit Driver for Lenders</Heading>
+            <Heading as="h2">Maintaining the Credit Driver for Lenders</Heading>
           </GridItem>
           <GridItem>
             <Text>
@@ -40,10 +40,14 @@ const Taq2022Summer = () => {
             </Text>
           </GridItem>
           <GridItem>
+            <Heading as="h3">Example 1</Heading>
+          </GridItem>
+          <GridItem>
             <Text>
-            Suppose we need to add a new Tax Type. First, depending on the situation, we might set up a feature toggle for this tax. Then, we'll need to add this new field in document templates, the json object passed between frontend and backend, 
+            I once received a bug where a list of "undefined" is showing in a dropdown for a specific account. Since our tester tests in the  UAT (User Acceptance Testing) environment, I try to duplicate that error in local first. Interestingly, the error didn't appear when I duplicate the application, and I immediately thought that this is a data issue. However, after looking into the database I realized that the required data is there. After that, I found the stored procedure defined for grabbing the dropdown and it did grab data correctly. In the end, I had to open the Profiler for MS SQL, and compare the requests the database received for working/buggy accounts when populating the dropdown. It turns out that the buggy account had additional stored procedure calls and when looking back at the code, I realized what caused the additional call and how to prevent it from calling. After debugging this issue (and other similar ones), I learned how to utilize debugging tools: Dev tools for JS, Visual Studio Debugger for .Net Backend, and MS SQL's Profiler. If I were to debug a similar issue again, I will make sure to be more patient and step into every function potentially related to the issue.
             </Text>
           </GridItem>
+
         </Grid>
       </Box>
     </>
