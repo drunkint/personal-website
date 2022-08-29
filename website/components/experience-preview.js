@@ -61,10 +61,7 @@ const ExperiencePreview = () => {
                 color: "gray.400",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
-              parturient et sem ipsum volutpat vel. Natoque sem et aliquam
-              mauris egestas quam volutpat viverra. In pretium nec senectus
-              erat. Et malesuada lobortis.
+              I worked in the Credit Driver Maintenance team during my Summer Co-op term in Taq. Our team consists of 9 developers, and our job is to add and modify features of the credit application according to Lenders' requests.
             </chakra.p>
           </Box>
 
