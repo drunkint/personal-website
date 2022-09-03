@@ -1,9 +1,9 @@
-const { Center, Text } = require("@chakra-ui/react");
+const { Center, Image} = require("@chakra-ui/react");
 
 const Resume = () => {
     return (
         <Center h='80hv'>
-            <Text>Resume page in construction</Text>
+            <Image w="70%" mt="5" src="/resume-photos/resume-2022Sep.png"/>
         </Center>
     );
 }
