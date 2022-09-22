@@ -35,7 +35,7 @@ const Taq2022Summer = () => {
         <Heading as="h1" marginBottom="20px">
           My Work @ Taq Automative
         </Heading>
-        <Grid templateRows="repeat(1, 1fr)" gap={3}>
+        <Grid templateRows="repeat(1, 1fr)" gap={3} fontSize="lg">
           <GridItem>
             <Heading as="h2">Maintaining the Credit Driver for Lenders</Heading>
           </GridItem>
