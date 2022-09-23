@@ -1,10 +1,13 @@
 import { Flex, Box, Image, chakra, Link } from "@chakra-ui/react";
-
+import { PROJECT_BASE } from "../lib/constants";
 import NextLink from "next/link";
 
-const ProjectPreview = ({project}) => {
+const ProjectPreview = ({project, isHero}) => {
+  const height = (isHero === 'true') ? '60vh' : '30vh';
+  const projectLink = PROJECT_BASE.concat(project.slug);
+
   return (
-    <NextLink href={project.projectLink}  passHref>
+    <NextLink href={projectLink}  passHref>
       <Box
         mx="auto"
         my="20px"
@@ -14,15 +17,16 @@ const ProjectPreview = ({project}) => {
         _dark={{
           bg: "gray.800",
         }}
-        maxW="2xl"
+        // maxW="2xl"
+        
       >
         <Image
           roundedTop="lg"
           w="full"
-          h={64}
+          h={height}
           fit="cover"
           src={project.imageLink}
-          alt="article"
+          alt={project.title}
         />
 
         <Box p={6}>

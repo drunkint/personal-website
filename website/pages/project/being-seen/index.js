@@ -49,7 +49,7 @@ const BeingSeen = () => {
             <Text>
               The
               <Link href={proj.externalLink} style={{ color: "teal" }}>
-                Doctor App
+                Being Seen App
               </Link>{" "}
               was made by R2D2, a group of 5. It was written and tested in Java,
               and was developed using Android Studio. This project marks a

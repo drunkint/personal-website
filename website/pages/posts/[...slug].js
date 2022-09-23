@@ -11,8 +11,7 @@ import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
-  console.log("start");
-
+  
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
