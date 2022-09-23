@@ -4,7 +4,8 @@ import NextLink from "next/link";
 
 const ProjectPreview = ({project, isHero}) => {
   const height = (isHero === 'true') ? '60vh' : '30vh';
-  const projectLink = PROJECT_BASE.concat(project.slug);
+  console.log(project)
+  const projectLink = ['projects', project.slug].join('/');
 
   return (
     <NextLink href={projectLink}  passHref>

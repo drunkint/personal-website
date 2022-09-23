@@ -39,7 +39,8 @@ export async function getStaticProps() {
       'imageLink',
       'category',
       'description',
-      'date'
+      'date',
+      'slug'
     ])
   
     return {
