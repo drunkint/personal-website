@@ -9,8 +9,12 @@ import {
   Link,
 } from "@chakra-ui/react";
 import {NextLink} from "next/link";
+import { PROJECTS } from "../../../lib/constants";
 
 const CuteCatVsLingChieh = () => {
+  const proj = PROJECTS[0];
+
+
   return (
     <>
       <Center>
@@ -19,12 +23,12 @@ const CuteCatVsLingChieh = () => {
           w="50%"
           h="50vh"
           fit="cover"
-          src="/project-photos/cute-cat-vs-ling-chieh.png"
+          src={proj.imageLink}
           alt="taq article"
         />
       </Center>
       <Center>
-        <Text>Cover of Project Slides</Text>
+        <Text>{proj.imageCaption}</Text>
       </Center>
       <Box my="10" mx="auto" w="50%">
         <Text fontSize="sm"
@@ -32,9 +36,9 @@ const CuteCatVsLingChieh = () => {
               color="brand.600"
               _dark={{
                 color: "brand.400",
-              }}>C++, SFML, MakeFile, Agile, Git, Github</Text>
+              }}>{proj.category}</Text>
         <Heading as="h1" marginBottom="20px">
-        Cute Cat Vs. Ling Chieh - a Board Game App
+        {proj.title}
         </Heading>
         <Grid templateRows="repeat(1, 1fr)" gap={3} fontSize="lg">
           <GridItem >
