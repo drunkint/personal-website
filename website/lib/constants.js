@@ -25,4 +25,14 @@ export const PROJECTS = [
       "In this project, I built a classic horizontal scrolling game using MIPS (Assembly). Features include: Collision Detection, HP/MP, Lightning Attack, pick-up-armo/health, score management, etc. In the process, I learned how functions, if-else statements, and memory works in a low level, and learned to modularize assembly code. In the end, this project earned full marks.",
     date: "AUG 2021",
   },
+  {
+    title: "Doctor App",
+    projectLink: `${PROJECT_BASE}doctor-app`,
+    imageLink: "/project-photos/doctor-app.png",
+    imageCaption: "Screenshot of Home Page when Logging in as a Doctor",
+    externalLink: "https://github.com/B07-R2D2/Doctor-App",
+    category: "Java, Android Studio, Firebase, Agile, Unit Test, XML, Expresso Test",
+    description: "We created a appointment booking app as a team of 5. Features include: sign in as different roles, search, tags, and saving to firebase as a JSON object. In this process we used MVC structure, created unit tests for login, and implemented agile by having daily standup meetings. In the end, this project got 18.5/20 ",
+    date: "AUG 2021",
+  }
 ];

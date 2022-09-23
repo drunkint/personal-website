@@ -23,7 +23,7 @@ const LaserAndLightning = () => {
           h="50vh"
           fit="cover"
           src={proj.imageLink}
-          alt="taq article"
+          alt={proj.title}
         />
       </Center>
       <Center>

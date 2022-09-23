@@ -24,7 +24,7 @@ const CuteCatVsLingChieh = () => {
           h="50vh"
           fit="cover"
           src={proj.imageLink}
-          alt="taq article"
+          alt={proj.title}
         />
       </Center>
       <Center>
@@ -43,7 +43,7 @@ const CuteCatVsLingChieh = () => {
         <Grid templateRows="repeat(1, 1fr)" gap={3} fontSize="lg">
           <GridItem >
             <Text >
-              <Link href="https://github.com/drunkint/Election-Monopoly-SFML" 
+              <Link href={proj.externalLink}
               style={{color: "teal"}}>
                 This
               </Link>
