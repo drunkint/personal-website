@@ -25,6 +25,5 @@ export function getProjectBySlug(slug, fields = []) {
     fields.concat(['slug']);
   }
   const target = getAllProjects(fields).filter((proj) => proj.slug === slug);
-  // console.log(target); 
   return target[0];
 }
