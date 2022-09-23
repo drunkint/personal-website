@@ -1,10 +1,10 @@
 export const EXAMPLE_PATH = "blog-starter";
 export const CMS_NAME = "Angus' personal webiste";
-export const HOME_OG_IMAGE_URL = "/meta/selfie.jpg";
+export const HOME_OG_IMAGE_URL = "/meta/cover-page.jpg";
 export const PROJECT_BASE = "/projects/";
 export const PROJECTS = [
   {
-    title: "Cute Cat Vs. Ling Chieh",
+    title: "Cute Cat Vs. Ling Chieh - a Monopoly-like Board Game",
     projectLink: `${PROJECT_BASE}cute-cat-vs-ling-chieh`,
     imageLink: "/project-photos/cute-cat-vs-ling-chieh.png",
     imageCaption: "Cover of Project Slides",
@@ -15,7 +15,7 @@ export const PROJECTS = [
     date: "JAN 2021",
   },
   {
-    title: "Laser and Lightning",
+    title: "Laser and Lightning - a Horizontal Scrolling Game",
     projectLink: `${PROJECT_BASE}laser-and-lightning`,
     imageLink: "/project-photos/laser-and-lightning-laser.png",
     imageCaption: "Screenshot of Spacecraft Destroying Astroids",
@@ -26,7 +26,7 @@ export const PROJECTS = [
     date: "AUG 2021",
   },
   {
-    title: "Doctor App",
+    title: "Doctor App - an Appointment Scheduling App",
     projectLink: `${PROJECT_BASE}doctor-app`,
     imageLink: "/project-photos/doctor-app.png",
     imageCaption: "Screenshot of Home Page when Logging in as a Doctor",
@@ -34,5 +34,15 @@ export const PROJECTS = [
     category: "Java, Android Studio, Firebase, Agile, Unit Test, XML, Expresso Test",
     description: "We created a appointment booking app as a team of 5. Features include: sign in as different roles, search, tags, and saving to firebase as a JSON object. In this process we used MVC structure, created unit tests for login, and implemented agile by having daily standup meetings. In the end, this project got 18.5/20 ",
     date: "AUG 2021",
+  },
+  {
+    title: "Being Seen - an App for the Homeless Youth",
+    projectLink: `${PROJECT_BASE}being-seen`,
+    imageLink: "/project-photos/being-seen.gif",
+    imageCaption: "GIF of opening the App",
+    externalLink: "https://github.com/UTSCCSCC01/projectf21-gmt-8-gang",
+    category: "Java, MongoDB Atlas, Spring Boot, Android Studio, Stripe API",
+    description: "We created a donation/buying app as a team of 7. Features include: ",
+    date: "DEC 2021",
   }
 ];
