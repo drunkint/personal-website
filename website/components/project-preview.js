@@ -3,7 +3,7 @@ import { PROJECT_BASE } from "../lib/constants";
 import NextLink from "next/link";
 
 const ProjectPreview = ({project, isHero}) => {
-  const height = (isHero === 'true') ? '60vh' : '30vh';
+  const height = (isHero === 'true') ? '65vh' : '40vh';
   const projectLink = ['projects', project.slug].join('/');
 
   return (

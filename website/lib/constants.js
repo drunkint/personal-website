@@ -119,7 +119,13 @@ export const PROJECTS = [
     date: "DEC 2021",
     content: [
       "The Being Seen App",
-      "is an app made for the homeless youth.",
+      "is an app made for the homeless youth. The goal of this app is to make sure \
+      the homeless youth uses the money for food and living essentials, instead of \
+      goods that aren't beneficial to the individual. It works like this: First a \
+      homeless youth signs up and sets a donation goal. Then a donor signs up \
+      and transfers their money into an in-app currency, and uses that in-app \
+      currency to donate to a homeless youth. The homeless youth then could use \
+      that in-app currency to specific stores to buy Groceries.",
       "To tackle this project, I self-learned android studio, Spring Boot\
       for backend APIs, and used MongoDB for database. These skills\
       allowed me to design and implement the structure of the frontend,\
@@ -131,4 +137,29 @@ export const PROJECTS = [
       achieve above 90 on the project.",
     ],
   },
+  {
+    title: "Last Minute Shop - an App online purchasing",
+    slug: "last-minute-shop",
+    imageLink: "/project-photos/last-minute-shop-cover.png",
+    imageCaption: "Sign in prompt with 3D background using ThreeJS",
+    externalLink: "https://www.youtube.com/watch?v=HQryfk_bl6M",
+    category: "React.js, MongoDB, Three.js, StripeAPI, Material-UI, GraphQL, Docker",
+    description:
+      "",
+    date: "APR 2022",
+    content: [
+      "The last minute shop",
+      "is an app for online purchase made by a team of three. This was an important project because \
+      this was my first react project, and the first time I used GraphQL (which is a whole \
+      new way of doing APIs), \
+      and docker for deployment. I also experimented a lot of new features, such as drag-and-drop, \
+      photo upload, camera access, 3D responsive background, and more.",
+      "There are a lot of things I would change if I were to restart the project. First, the UI \
+      should be more consistent. I'll probably use Chakra-UI since this project is pretty time-limited. \
+      Also, I would try to arrange my components better by creating a components folder instead of putting \
+      everything into pages. In addition, I should write more comments and remove dead code, since it would \
+      be easier for others to understand my code. Lastly, we should've picked a project that involves some WebRTC \
+      or other more advanced technology, since that would make the project more challenging and fun to make."
+  ]
+  }
 ];
