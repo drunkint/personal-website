@@ -2,8 +2,8 @@ import { Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const wordList = ["李旭紳", "Hsu Shen Lee", "Programmer", "Teaching Assistant", "Calligrapher", "Climber"];
-const durationOfWord = 4;
+const wordList = ["李旭紳 Hsu Shen Lee", "Full Stack Developer", "Teaching Assistant", "Calligrapher", "Climber"];
+const durationOfWord = 3;
 const effectTime = 1;
 const initDelay = 0.8;
 const deltaMilliseconds = 50;

@@ -29,7 +29,7 @@ const textStyles = {
   },
   h2: {
     fontSize: ['36px', '48px'],
-    fontWeight: 'semibold',
+    // fontWeight: 'semibold',
     lineHeight: '110%',
     letterSpacing: '-1%',
   },

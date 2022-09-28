@@ -68,7 +68,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Doctor App - an Appointment Scheduling App",
+    title: "Doctor App - an Appointment Scheduling Android App",
     slug: "doctor-app",
     imageLink: "/project-photos/doctor-app.png",
     imageCaption: "Screenshot of Home Page when Logging in as a Doctor",
@@ -108,7 +108,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Being Seen - an App for the Homeless Youth",
+    title: "Being Seen - an Android App for the Homeless Youth",
     slug: "being-seen",
     imageLink: "/project-photos/being-seen.gif",
     imageCaption: "GIF of opening the App",
@@ -138,14 +138,14 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Last Minute Shop - an App online purchasing",
+    title: "Last Minute Shop - a Web App for online shopping",
     slug: "last-minute-shop",
     imageLink: "/project-photos/last-minute-shop-cover.png",
     imageCaption: "Sign in prompt with 3D background using ThreeJS",
     externalLink: "https://www.youtube.com/watch?v=HQryfk_bl6M",
     category: "React.js, MongoDB, Three.js, StripeAPI, Material-UI, GraphQL, Docker",
     description:
-      "",
+      "We created the last minute shop in a team of three. We experimented new tools such as React.js, GraphQL, Three.js. Features include 3D responsive background, camera access, online payment, drag-and-drop, and more.",
     date: "APR 2022",
     content: [
       "The last minute shop",
