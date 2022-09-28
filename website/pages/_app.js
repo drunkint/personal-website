@@ -6,6 +6,7 @@ import { Router } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
+import Footer from "../components/footer";
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -13,6 +14,7 @@ export default function MyApp({ Component, pageProps }) {
       <AnimatePresence>
         <Navbar path={Router.asPath} />
         <Component {...pageProps} />
+        <Footer/>
       </AnimatePresence>
     </ChakraProvider>
   );
