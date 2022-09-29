@@ -6,7 +6,7 @@ const Footer = () => {
   const sizeOfIcons = 50;
   return (
     <>
-      <Box w="full" h="10vh">
+      <Box w="full" h="10vh" mt={5}>
         <Center>
           <Link href="https://www.linkedin.com/in/hsu-shen-lee-0a80681a7/">
             <Button variant="ghost" p="0" mx="10px">
