@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Center, Text, Box } from "@chakra-ui/react";
+import { Center, Text, Box , Button} from "@chakra-ui/react";
 import { SplitText } from "@cyriacbr/react-split-text";
 import { extendTheme } from "@chakra-ui/react";
 import ChangingText from "./changing-text";
@@ -41,7 +41,9 @@ const Splash = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
         >
           <Link href="#homePageBio" scroll={true}>
-            <ArrowDownIcon />
+            <Button variant="ghost" p="0">
+              <ArrowDownIcon />
+            </Button>
           </Link>
         </motion.div>
       </Center>
