@@ -49,10 +49,10 @@ const Splash = () => {
       </Center>
       <Center h="100vh">
         <Box
-          textStyle="h2"
+          textStyle={{base: "txt", md: "h2"}}
           // textAlign={"center"}
           fontFamily={`'Raleway', sans-serif`}
-          w="70%"
+          w={{base: "100%", md: "70%"}}
         >
           <motion.div
             initial={{ opacity: 0, translateY: 50 }}

@@ -33,6 +33,13 @@ const textStyles = {
     lineHeight: '110%',
     letterSpacing: '-1%',
   },
+  txt: {
+    fontSize: ['26px'],
+    // fontWeight: 'semibold',
+    lineHeight: '130%',
+    letterSpacing: '-1%',
+  }
+
 }
 
 
