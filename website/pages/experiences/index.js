@@ -11,7 +11,6 @@ const Experiences = () => {
         <GridItem>
           <ExperiencePreview/>
         </GridItem>
-        
       </Grid>
     </Center>
   );

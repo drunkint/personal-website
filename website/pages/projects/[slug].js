@@ -29,7 +29,7 @@ export default function Project({ proj }) {
       <Center>
         <Image
           my="5"
-          w="50%"
+          w={{base: "90%", md: "50%"}}
           h="50vh"
           fit="cover"
           src={proj.imageLink}
@@ -39,7 +39,7 @@ export default function Project({ proj }) {
       <Center>
         <Text>{proj.imageCaption}</Text>
       </Center>
-      <Box my="10" mx="auto" w="50%">
+      <Box my="10" mx="auto" w={{base: "90%", md: "50%"}}>
         <Text
           fontSize="sm"
           textTransform="uppercase"

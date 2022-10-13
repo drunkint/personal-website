@@ -16,7 +16,7 @@ const Taq2022Summer = () => {
       <Center>
         <Image
           my="5"
-          w="50%"
+          w={{base: "90%", md: "50%"}}
           h="50vh"
           fit="cover"
           src="/experience-photos/taq-dashboard.png"
@@ -31,7 +31,7 @@ const Taq2022Summer = () => {
           ~ Go to Latest Resume ~
         </NextLink>
       </Center>
-      <Box my="10" mx="auto" w="50%">
+      <Box my="10" mx="auto" w={{base: "90%", md: "50%"}}>
         <Heading as="h1" marginBottom="20px">
           My Work @ Taq Automative
         </Heading>
